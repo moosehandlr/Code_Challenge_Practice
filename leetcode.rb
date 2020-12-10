@@ -6,7 +6,7 @@
 # Expected Output: 6
 
 def maximum_wealth(accounts)
-    accounts.map {|account| account.sum}.max
+  accounts.map {|account| account.sum}.max
 end
 # -----------------
 
@@ -17,8 +17,8 @@ end
 # Expected Output: [1,3,6,10]
 
 def running_sum(nums)
-    sum = 0
-    nums.map{|num| sum+=num}
+  sum = 0
+  nums.map{|num| sum+=num}
 end
 #------------------
 
@@ -31,15 +31,15 @@ end
 # Expected Output: [true,true,true,false,true]
 
 def kids_with_candies(candies, extra_candies)
-    max = candies.max
-    candies.map do |c|
-        if c < max && c + extra_candies >= max
-            true
-        elsif c == max
-            true
-        else
-            false
-        end
+  max = candies.max
+  candies.map do |c|
+    if c < max && c + extra_candies >= max
+        true
+    elsif c == max
+        true
+    else
+        false
     end
+  end
 end
 #-----------------
