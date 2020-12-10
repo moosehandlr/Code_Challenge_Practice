@@ -9,3 +9,15 @@ def maximum_wealth(accounts)
     accounts.map {|account| account.sum}.max
 end
 # -----------------
+
+# Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
+# Return the running sum of nums.
+#
+# Input: nums = [1,2,3,4]
+# Expected Output: [1,3,6,10]
+
+def running_sum(nums)
+    sum = 0
+    nums.map{|num| sum+=num}
+end
+#------------------
