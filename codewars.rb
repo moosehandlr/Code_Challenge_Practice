@@ -7,10 +7,7 @@
 
 def words_to_marks(string)
   letters = ('a'..'z').to_a
-
-  string.downcase.chars.map do |letter|
-    letters.index(letter) + 1
-  end.sum
+  string.downcase.chars.map {|letter| letters.index(letter) + 1}.sum
 end
 
 puts words_to_marks("abc") == 6
