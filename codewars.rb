@@ -12,5 +12,12 @@ end
 
 puts words_to_marks("abc") == 6
 puts words_to_marks("cba") == 6
-
 # ---------------
+# In this kata, you are asked to square every digit of a number and concatenate them.
+# For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+
+def square_digits(num)
+  num.to_s.split('').map{|int| int.to_i ** 2}.join.to_i
+end
+
+puts square_digits(3458) == 9162564
